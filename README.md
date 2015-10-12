@@ -1,10 +1,14 @@
 ## A Material Design Lite Ghost Theme
 
-[Live Demo](https://suki.im)
+#### Install  
+modify `/partials/disqus.hbs`   `disqus_shortname = ''` content for your disqus ID  
+mv `Response/mdlutils.js` `Response/tags.js` to /core/server/helper .  
 
-[MDL Customize](http://www.getmdl.io/customize/index.html)
+[Live Demo](https://suki.im)  
 
-#### For the Nerds
+[MDL Customize](http://www.getmdl.io/customize/index.html)  
+
+#### For the Nerds  
 For customization, basic knowledge of the command line and the following dependencies are required to use MDL:
 
 - MDL ([http://www.getmdl.io/](http://www.getmdl.io/)) 
