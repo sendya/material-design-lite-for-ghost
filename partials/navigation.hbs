@@ -1,0 +1,23 @@
+<div class="mdl-layout__drawer-button"><i class="material-icons">menu</i></div>
+<!-- top navigation begin -->
+<div class="mdl-layout__header-row">
+  <!-- Title -->
+  <span class="mdl-layout-title" onclick="location.href='{{@blog.url}}'">{{@blog.title}}</span>
+  <!-- Add spacer, to align navigation to the right -->
+  <div class="mdl-layout-spacer"></div>
+	<div class="mdlite-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">   
+      <form role="search" method="get" class="search-form" action="#" onSubmit="alert('无法使用该功能');return false;">
+				<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+				    <i class="material-icons">search</i>
+				</label>
+				<div class="mdl-textfield__expandable-holder">
+					<input class="mdl-textfield__input" type="text" value="" name="s" id="fixed-header-drawer-exp" />
+				</div>
+			</form>
+	</div>
+  <nav class="mdl-navigation mdl-layout--large-screen-only mdl-js-ripple-effect" id="mdl-navigation-top">
+  	{{#foreach navigation}}
+  	<a href="{{url absolute="true"}}" class="mdl-navigation__link nav-{{slug}} {{#if current}}mdl-navigation current-menu-item{{/if}} fuck-{{current}}">{{label}}</a>
+	{{/foreach}}
+	</nav>
+</div><!-- top navigation end -->

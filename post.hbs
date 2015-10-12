@@ -1,0 +1,70 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<div id="primary" class="content-area">
+    <main id="main" class="site-main mdl-grid mdlite-900" role="main">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp"> 
+            <article id="post-1" class="{{post_class}}">
+                <div class="mdl-card__media" style="background-image: url('{{#if image}}{{image}}{{else}}{{asset "images/title.jpg"}}{{/if}}');">
+                    <header>
+                        <h3 style="">{{title}}</h3>
+                    </header><!-- .entry-header -->
+                </div>
+                {{#author}}
+                <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+                    <div class="avatar-img">
+                        <img alt="" src="{{image}}" class="avatar photo" height="32" width="32">
+                    </div>
+                    <div class="entry-meta">
+                        <strong class="byline">
+                            <span class="author vcard">
+                                <a class="url fn n" href="{{url}}">{{name}}</a>
+                            </span>
+                        </strong>
+                        <span class="posted-on">
+                            <a href="{{url}}" rel="bookmark">
+                                <time class="entry-date published" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                            </a>
+                        </span>
+                    </div><!-- .entry-meta -->
+                </div>
+                {{/author}}
+                <div class="entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
+                    {{content}}
+                </div><!-- .entry-content -->
+                <footer class="entry-footer meta mdl-card__actions mdl-card--border">
+                    <div class="post_tags">
+                    {{#tags separator=""}}
+                        <a href="#">{{name}}</a>
+                    {{/tags}}
+                    
+                    </div>
+                </footer><!-- .entry-footer -->
+
+            </article><!-- #post-## -->
+        </div> <!-- .mdl-cell -->
+        <div id="comments" class="mdl-card__supporting-text comments mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+            <div id="disqus_thread"></div>
+        </div>
+
+    </main><!-- #main end -->
+<div><!-- #primary -->
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'sendya';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+{{/post}}

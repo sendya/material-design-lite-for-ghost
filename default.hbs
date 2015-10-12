@@ -1,0 +1,107 @@
+<!-- 
+	基于 MIUI（雾
+	使用 Material Design Lite Kit 开发的 MD风格Ghost博客主题.
+	author: Sendya <18x@mloli.com>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{meta_description}}" />
+	{{! Page Meta }}
+	<title>{{meta_title}}</title>
+	<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+	{{! Styles'n'Scripts }}
+	<link rel="stylesheet" type="text/css" href="{{asset "css/material.indigo-red.min.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "css/material.main.v2.css"}}" />
+	<link rel="stylesheet" type="text/css" href="//fonts.loacg.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="//fonts.loacg.com/css?family=Roboto:300,400,500,700" />
+	{{! Ghost outputs important style and meta data with this tag }}
+	{{ghost_head}}
+</head>
+<body class="mdl-color-text--grey-700 mdl-base {{body_class}}">
+	<div id="page" class="hfeed site mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header id="masthead" class="site-header mdl-layout__header" role="banner">
+			{{navigation}}
+		</header>
+		<!-- scrollTop -->
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-js-ripple-effect scrollTop" style="display: none;">
+		  <i class="material-icons">keyboard_arrow_up</i>
+		</button>
+		<!-- drawer navigation begin-->
+		<div class="mdl-layout__drawer">
+		  <span class="mdl-layout-title">{{@blog.title}}</span>
+		  {{> "navdrawer"}}
+		</div><!-- #drawer navigation end -->
+	<!-- mdl-layout__content -->
+		<main class="mdl-layout__content">
+			<div id="content" class="site-content">
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+			</div><!-- #content -->
+
+			<footer class="mdl-mega-footer">
+				<div class="mdl-mega-footer__middle-section">
+					<div id="mdlite_widget-1" class="mdl-mega-footer__drop-down-section footer-widget widget_mdlite_widget">
+						<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+						<h1 class="mdl-mega-footer__heading footer-title">Links</h1>
+						<ul class="mdl-mega-footer__link-list">
+							<li><a href="https://ghost.org/" title="How do you want to start your blog?" target="_blank">Ghost</a></li>
+							<li><a href="https://www.loacg.com/" title="You are not alone." target="_blank">Sendya</a></li>
+							<li><a href="http://www.getmdl.io/" title="Material Design Lite" target="_blank">Material Design Lite</a></li>
+							<li><a href="/links" title="More link" target="_blank">More..</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked="">
+            <h1 class="mdl-mega-footer--heading">Details</h1>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="#">Spec</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+					<div class="mdl-mega-footer--drop-down-section">
+					  <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked="">
+					  <h1 class="mdl-mega-footer--heading">Technology</h1>
+					  <ul class="mdl-mega-footer--link-list">
+					    <li><a href="#">How it works</a></li>
+					    <li><a href="#">Patterns</a></li>
+					    <li><a href="#">Usage</a></li>
+					    <li><a href="#">Products</a></li>
+					    <li><a href="#">Contracts</a></li>
+					  </ul>
+					</div>
+					<div class="mdl-mega-footer--drop-down-section">
+	              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked="">
+	              <h1 class="mdl-mega-footer--heading">FAQ</h1>
+	              <ul class="mdl-mega-footer--link-list">
+	                <li><a href="#">Questions</a></li>
+	                <li><a href="#">Answers</a></li>
+	                <li><a href="#">Contact us</a></li>
+	              </ul>
+	        </div>
+					</div>
+					<div class="mdl-mega-footer--bottom-section">
+						<div class="mdl-logo">
+						  Proudly published with <a href="https://ghost.org">Ghost</a>
+						</div>
+						<ul class="mdl-mega-footer--link-list">
+						  <li><a href="https://developers.google.com/web/starter-kit/">Google Material Design</a></li>
+						  <li>Theme by <a href="https://www.loacg.com/">Sendya</a></li>
+						  <li><a href="#">QAQ.</a></li>
+						</ul>
+					</div>
+			</footer>
+		</main> <!-- .mdl-layout__content -->
+	</div><!-- #page end -->
+	<div class="mdl-layout__obfuscator"></div>
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+  {{! The main JavaScript file for Material Design Lite }}
+  <script type="text/javascript" src="{{asset "js/material.min.js"}}"></script>
+</body>
+</html>

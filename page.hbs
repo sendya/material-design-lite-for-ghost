@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+        <div class="ribbon" style="background-color:#f5f5f5;{{#if image}}background-image: url('{{image}}');{{/if}}height:80vh; "></div>
+        <div class="mdlite-page-ribbon">
+            <div class="mdl-grid mdlite-1600">
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+
+                <div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--2dp ribbon-content"> 
+                    <article id="post-{{post_class}}" class="{{post_class}}">
+                        <header><h3 style="">{{title}}</h3></header><!-- .entry-header -->
+                        <div class="entry-content mdl-color-text--grey-600">
+                            {{content}}
+                        </div><!-- .entry-content -->
+                    </article><!-- #post-## -->
+                </div> <!-- .mdl-cell -->
+            </div>
+        </div>
+        
+    </main><!-- #main end -->
+<div><!-- #primary -->
+
+{{/post}}

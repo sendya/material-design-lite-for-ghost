@@ -1,0 +1,19 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main mdl-grid mdlite-900" role="main">
+		{{! The tag below includes the post loop - partials/loop.hbs }}
+		{{> "content"}}
+      <nav class="mdlite-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col" role="navigation">
+      		{{#next_post}}
+      		<a class="mdlite-nav__button" href="{{url}}"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">arrow_back</i></button> 下一页</a>
+          {{/next_post}}
+      
+          <div class="section-spacer"></div>
+          {{#prev_post}}
+          <a class="mdlite-nav__button" href="{{url}}">上一页 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">arrow_forward</i></button></a>
+        {{/prev_post}}
+      </nav><!-- .navigation -->
+	</main><!-- #main end -->
+<div><!-- #primary -->
