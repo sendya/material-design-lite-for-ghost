@@ -1,8 +1,15 @@
 ## A Material Design Lite Ghost Theme
 
 #### Install  
-modify `/partials/disqus.hbs`   `disqus_shortname = ''` content for your disqus ID  
-mv `Response/mdlutils.js` `Response/tags.js` to /core/server/helper .  
+1. modify `/partials/disqus.hbs`   `disqus_shortname = ''` content for your disqus ID  
+2. mv `Response/mdlutils.js` `Response/tags.js` to /core/server/helper .  
+3. admin panel / code-injection / Blog Footer code , load `jQuery`
+example：   
+``
+<!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="//lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+``
+
 
 [Live Demo](https://suki.im)  
 
