@@ -6,10 +6,10 @@
 3. admin panel / code-injection / Blog Footer code , load `jQuery`
 example：   
 ``
-<!-- You can safely delete this line if your theme does not require jQuery -->
-<script type="text/javascript" src="//lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
-``
+<!-- You can safely delete this line if your theme does not require jQuery -->  
+<script type="text/javascript" src="//lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>``
 
+4. change your footer link `/partials/footer.hbs`
 
 [Live Demo](https://suki.im)  
 
