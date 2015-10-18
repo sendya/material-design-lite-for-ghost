@@ -15,10 +15,12 @@ example：
 [MDL Customize](http://www.getmdl.io/customize/index.html)  
 
 #### Pic
-![enter image description here](https://suki.im/content/images/2015/10/20151013141427.png)
+![enteFixr image description here](https://suki.im/content/images/2015/10/20151013141427.png)
 
 #### Fix
-2015-10-18 Content Image (.entry-content img) : width:100%;height:auto; (图片不再飘出去了)
+2015-10-18：  
+        Content Image (.entry-content img) : width:100%;height:auto; (图片不再飘出去了)
+        Fix Googleapis CDN (css.net)
 
 #### 中文说明
 1. 修改  `/partials/disqus.hbs` 文件的  `disqus_shortname = ''`  引号内,内容为 你的disqus ID.
