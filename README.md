@@ -20,7 +20,8 @@ example：
 #### Fix
 2015-10-18：  
         Content Image (.entry-content img) : width:100%;height:auto; (图片不再飘出去了)  
-        Fix Googleapis CDN (css.net)
+        Fix Googleapis CDN (css.net)  
+        Fix Disqus comment
 
 #### 中文说明
 1. 修改  `/partials/disqus.hbs` 文件的  `disqus_shortname = ''`  引号内,内容为 你的disqus ID.
