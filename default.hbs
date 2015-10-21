@@ -1,4 +1,4 @@
-<!-- 
+<!--
 	基于 MIUI（雾
 	使用 Material Design Lite Kit 开发的 MD风格Ghost博客主题.
 	googleapis cdn
@@ -25,6 +25,20 @@
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	{{! Ghost outputs important style and meta data with this tag }}
 	{{ghost_head}}
+
+	{{! 增加 highlight代码高亮插件 }}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+	<!-- 推荐的主题: solarized_light, github, monokai_sublime, tomorrow -->
+	<!-- 主题字体 大小 行距 和 字体可能不太好看 , 建议下载下来这个css 自己编辑 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+	<script>
+	hljs.configure({
+		tabReplace: '    ', // 4 spaces
+	});
+	hljs.initHighlightingOnLoad();
+	</script>
+	
 </head>
 <body class="mdl-color-text--grey-700 mdl-base {{body_class}}">
 	<div id="page" class="hfeed site mdl-layout mdl-js-layout mdl-layout--fixed-header">
