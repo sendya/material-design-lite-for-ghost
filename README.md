@@ -3,10 +3,12 @@
 #### Install  
 1. modify `/partials/disqus.hbs`   `disqus_shortname = ''` content for your disqus ID  
 2. mv `Response/mdlutils.js` `Response/tags.js` to `/core/server/helpers` .  
-3. admin panel / code-injection / Blog Footer code , load `jQuery`
-example：   
+3. In the admin panel / code-injection / Blog Footer code , Don't repeat loading `jQuery`
+example:
 
+```html
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+```
 
 4. change your footer link `/partials/footer.hbs`
 
@@ -26,10 +28,12 @@ example：
 #### 中文说明
 1. 修改  `/partials/disqus.hbs` 文件的  `disqus_shortname = ''`  引号内,内容为 你的disqus ID.
 2. 移动文件 `Response/mdlutils.js` `Response/tags.js`  到 `/core/server/helpers` 目录内.
-3. 后台管理员面板->菜单code-injection -> Blog Footer 加载`jQuery`  
+3. 后台管理员面板->菜单code-injection -> Blog Footer 请勿重复加载`jQuery`  
 example：  
 
+```html
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+```
 
 4. 改变默认的footer链接内容,文件在 `/partials/footer.hbs`
 
