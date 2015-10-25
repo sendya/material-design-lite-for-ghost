@@ -32,11 +32,11 @@ example：
         <script type="text/javascript" src="//lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 
 4. 改变默认的footer链接内容,文件在 `/partials/footer.hbs`
-
+5. 移除 Disqus留言板 请打开`post.hbs`文件，移除 行`57`，与 行`50`到`52`(ID为comments的div移除) 即可
 #### For the Nerds  
 For customization, basic knowledge of the command line and the following dependencies are required to use MDL:
 
-- MDL ([http://www.getmdl.io/](http://www.getmdl.io/)) 
+- MDL ([http://www.getmdl.io/](http://www.getmdl.io/))
 - Node ([http://nodejs.org/](http://nodejs.org/))
 - Gulp ([http://gulpjs.com/](http://gulpjs.com/))
-- Bower ([http://bower.io/](http://bower.io/)) 
+- Bower ([http://bower.io/](http://bower.io/))
