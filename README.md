@@ -36,7 +36,7 @@ example：
 ```
 
 4. 改变默认的footer链接内容,文件在 `/partials/footer.hbs`
-
+5. 移除 Disqus留言板 请打开`post.hbs`文件，移除 行`57`，与 行`50`到`52`(ID为comments的div移除) 即可
 #### For the Nerds  
 For customization, basic knowledge of the command line and the following dependencies are required to use MDL:
 
