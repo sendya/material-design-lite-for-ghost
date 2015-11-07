@@ -9,9 +9,9 @@
     <main id="main" class="site-main mdl-grid mdlite-900" role="main">
         <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp"> 
             <article id="post-1" class="{{post_class}}">
-                <div class="mdl-card__media" style="background-image: url('{{#if image}}{{image}}{{else}}{{asset "images/title.jpg"}}{{/if}}');">
+                <div class="mdl-card__media post-header" style="background-image: url('{{#if image}}{{image}}{{else}}{{asset "images/title.jpg"}}{{/if}}');">
                     <header>
-                        <h3 style="">{{title}}</h3>
+                        <h3>{{title}} | {{@blog.title}}</h3>
                     </header><!-- .entry-header -->
                 </div>
                 {{#author}}

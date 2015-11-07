@@ -1053,14 +1053,18 @@ body{
     background-image: url("http://i13.tietuku.com/25b5a8e76d49bcd4.jpg");
 }
 
-.mdl-card__media > header {
+.post-header > header {
     width: 120%;
     height: 40px;
     padding: 16px;
     background: rgba(0, 0, 0, 0.2);
     margin: -24px;
 }
-.mdl-card__media > header > h3 {
+.post-header > header > h3 {
     color: #fff;
+}
+
+footer > .post_tags > a{
+    margin: 5px;
 }
 
