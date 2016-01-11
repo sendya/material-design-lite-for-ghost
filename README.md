@@ -12,12 +12,12 @@ example:
 
 4. change your footer link `/partials/footer.hbs`
 
-[Live Demo](https://suki.im)  
+[Live Demo](https://blog.loacg.com/)  
 
 [MDL Customize](http://www.getmdl.io/customize/index.html)  
 
 #### Pic
-![enteFixr image description here](https://suki.im/content/images/2015/10/20151013141427.png)
+![enteFixr image description here](https://blog.loacg.com/content/images/2015/10/20151013141427.png)
 
 #### Fix
 2015-10-18：  
