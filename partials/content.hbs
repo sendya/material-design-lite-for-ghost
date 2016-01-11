@@ -2,16 +2,16 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">   
-	<article id="post-1" class="{{post_class}}">
+	<article id="post" class="{{post_class}}">
 
-		<div class="mdl-card__media" style="padding: 16px;background-color: #FFF;color:#000;height: auto;border-bottom: 1px solid rgba(0,0,0,.1);">
+		<div class="mdl-card__media post-header" style="background-image: url('{{asset "images/default_image.jpg"}}'); ">
 			<header>
 				<h3><a style="color:#000;" href="{{url}}" rel="post-content">{{{title}}}</a></h3>
 			</header><!-- .entry-header -->
 		</div>
 		<!-- .entry-content -->
 		<div class="entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
-		{{content words="150"}}
+		{{content characters="150"}}
 		<p id="more-read"><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" href="{{url}}">Read More</a></p>
 		</div><!-- .entry-content -->
 
@@ -20,7 +20,7 @@
 			<div class="avatar-img">
 				{{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" width="32" height="32" nopin="nopin" />{{/if}}
 			</div>
-	        
+	         
 			<div class="entry-meta">
 				<strong class="byline">
 					<span class="author">
