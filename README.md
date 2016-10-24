@@ -1,8 +1,8 @@
-## A Material Design Lite Ghost Theme
+## Material design lite Ghost blog theme
 
 #### Install  
-1. modify `/partials/disqus.hbs`   `disqus_shortname = ''` content for your disqus ID  
-2. mv `Response/mdlutils.js` `Response/tags.js` to `/core/server/helpers` .  
+1. modify `/partials/disqus.hbs`   `disqus_shortname = ''` content for your disqus ID
+2. mv `resource/mdlutils.js` `resource/tags.js` to Ghost path `/core/server/helpers` .
 3. In the admin panel / code-injection / Blog Footer code , Don't repeat loading `jQuery`
 example:
 
@@ -12,12 +12,12 @@ example:
 
 4. change your footer link `/partials/footer.hbs`
 
-[Live Demo](https://blog.loacg.com/)  
+[Live Demo](http://gclove.com/)
 
 [MDL Customize](http://www.getmdl.io/customize/index.html)  
 
 #### Pic
-![enteFixr image description here](https://blog.loacg.com/content/images/2015/10/20151013141427.png)
+![enteFixr image description here](https://static-2.loacg.com/open/static/ghost/images/sp161024_134109.png)
 
 #### Fix
 2015-10-18：  
@@ -27,7 +27,7 @@ example:
 
 #### 中文说明
 1. 修改  `/partials/disqus.hbs` 文件的  `disqus_shortname = ''`  引号内,内容为 你的disqus ID.
-2. 移动文件 `Response/mdlutils.js` `Response/tags.js`  到 `/core/server/helpers` 目录内.
+2. 移动文件 `resource/mdlutils.js` `resource/tags.js`  到 Ghost博客目录 `/core/server/helpers` 目录内.
 3. 后台管理员面板->菜单code-injection -> Blog Footer 请勿重复加载`jQuery`  
 example：  
 
